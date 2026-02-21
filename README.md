@@ -23,9 +23,7 @@ This application provides an easy-to-use interface for fetching detailed weather
 
 ```bash
 # Install dependencies
-pip install -r requirements.txt
-# or using uv
-uv pip install -r requirements.txt
+uv sync
 ```
 
 ## Usage
