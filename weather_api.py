@@ -1,17 +1,17 @@
 
-import sys
 import argparse
+import sys
 
-from wx_utils import (
-    get_user_location,
-    get_coordinates,
-    generate_location_url,
-    safe_api_call,
-    get_forecast_url,
-    parse_forecast_response,
-    print_forecast
-)
 from wx_config import forecast_locations
+from wx_utils import (
+    generate_location_url,
+    get_coordinates,
+    get_forecast_url,
+    get_user_location,
+    parse_forecast_response,
+    print_forecast,
+    safe_api_call,
+)
 
 
 def parse_args():

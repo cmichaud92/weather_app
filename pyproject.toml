@@ -1,14 +1,33 @@
 [project]
 name = "weather-api"
 version = "0.1.0"
-description = "Add your description here"
+description = "Small CLI to fetch weather report from a small set of predefined locations"
 readme = "README.md"
 requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Christopher Michaud", email = "michaudc870@gmail.com"}
+]
+keywords = ["NWIS", "NOAA", "weather", "API"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+]
 dependencies = [
     "argparse>=1.4.0",
     "pytest>=9.0.2",
     "requests>=2.32.5",
+    "ruff>=0.15.9",
 ]
+
+[project.scripts]
+weather-app = "main:main"
 
 [tool.ruff]
 line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # pycodestyle, pyflakes, isort
