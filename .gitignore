@@ -9,6 +9,17 @@ wheels/
 # Virtual environments
 .venv
 
+# Environment variables (preventive)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Jupyter notebooks
+*.ipynb
+
 # Other files and directories
 .DS_Store
 .coverage
